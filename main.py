@@ -13,10 +13,6 @@ ap = network.WLAN(network.AP_IF)
 ap.config(essid=ssid, password=password)
 ap.active(True)
 
-# Wait until it is active
-while ap.active == False:
-    pass
-
 print("Access point active")
 # Print out IP information
 print(ap.ifconfig())
